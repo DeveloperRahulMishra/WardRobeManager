@@ -1,0 +1,14 @@
+
+5
+down vote
+mappedby="object of entity of same class created in another class”
+
+Note:-Mapped by can be used only in one class because one table must contain foreign key constraint. if mapped by can be applied on both side then it remove foreign key from both table and without foreign key there is no relation b/w two tables.
+
+Note:- it can be use for following annotations:- 1.@OneTone 2.@OneToMany 3.@ManyToMany
+
+Note---It cannot be use for following annotation :- 1.@ManyToOne
+
+In one to one :- Perform at any side of mapping but perform at only one side . It will remove the extra column of foreign key constraint on the table on which class it is applied.
+
+For eg . If we apply mapped by in Employee class on employee object then foreign key from Employee table will be removed.
